@@ -24,7 +24,7 @@ function Home() {
           </Link>
         </div>
         <div>
-          <img className="co2" src="https://i.imgur.com/E1M4mLu.png" alt="truck"/>
+          <img className="co2" src="https://i.imgur.com/E1M4mLu.png" alt="logo"/>
         </div>
       </section>
     </>
