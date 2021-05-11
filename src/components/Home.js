@@ -27,6 +27,9 @@ function Home() {
             <button onClick={handleChange} className="button is-dark is-fullwidth">Estimate</button>
           </Link>
         </div>
+        <div>
+          <img className="truck" src="https://pngimg.com/uploads/free_shipping/free_shipping_PNG74.png" alt="truck"/>
+        </div>
       </section>
     </>
   )
