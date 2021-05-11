@@ -2,7 +2,6 @@ import React from 'react'
 import { useHistory } from 'react-router'
 import { createFootprint } from '../lib/api'
 
-
 function Form() {
   const history = useHistory()
   const [isError, setIsError] = React.useState(false)
@@ -27,7 +26,6 @@ function Form() {
 
     try {
       const res = await createFootprint(formData)
-      console.log(res.data.data.id)
       history.push(`/estimates/${res.data.data.id}`)
     } catch (error) {
       setIsError(true)
@@ -140,7 +138,6 @@ function Form() {
         </form>
       </section>
     </section>
-
   )
 }
 

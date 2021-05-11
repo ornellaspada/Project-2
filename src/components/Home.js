@@ -1,10 +1,6 @@
 import { Link } from 'react-router-dom'
 
 function Home() {
-  const handleChange = () => {
-    console.log('clicked')
-  }
-  
   return (
     <>
       <section className="hero is-success is-light is-fullheight-with-navbar">
@@ -24,7 +20,7 @@ function Home() {
             at your door, and choose to donate to one of our partner charities and help take care of our planet.
           </p>
           <Link to="/form">
-            <button onClick={handleChange} className="button is-primary is-light is-rounded is-focused is-fullwidth">Estimate</button>
+            <button className="button is-primary is-light is-rounded is-focused is-fullwidth">Estimate</button>
           </Link>
         </div>
         <div>
