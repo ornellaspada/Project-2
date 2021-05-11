@@ -3,7 +3,7 @@
 .resultsSection {
   height: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -51,6 +51,22 @@
   justify-content: center;
 }
 
-.truck {
-  width: 20em;
+.hero {
+  display: flex;
+}
+
+.co2 {
+  width: 200px;
+}
+
+.label {
+  color: rgb(255, 255, 255);
+}
+
+button {
+  border: 2px solid green;
+}
+
+.bottomTwo {
+  flex-direction: row;
 }

@@ -7,9 +7,9 @@ function Home() {
   
   return (
     <>
-      <section className="hero is-light is-fullheight-with-navbar">
+      <section className="hero is-success is-light is-fullheight-with-navbar">
         <div className="hero-body">
-          <p className="title">
+          <p className="title is-success">
             About
           </p>
           <p className="subtitle">
@@ -24,11 +24,11 @@ function Home() {
             at your door, and choose to donate to one of our partner charities and help take care of our planet.
           </p>
           <Link to="/form">
-            <button onClick={handleChange} className="button is-dark is-fullwidth">Estimate</button>
+            <button onClick={handleChange} className="button is-primary is-light is-rounded is-focused is-fullwidth">Estimate</button>
           </Link>
         </div>
         <div>
-          <img className="truck" src="https://pngimg.com/uploads/free_shipping/free_shipping_PNG74.png" alt="truck"/>
+          <img className="co2" src="https://i.imgur.com/E1M4mLu.png" alt="truck"/>
         </div>
       </section>
     </>

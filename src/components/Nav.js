@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 function Nav() {
   return (
-    <nav className="navbar is-light">
+    <nav className="navbar is-primary">
       <div className="container">
         <div className="navbar-brand">
           <Link to="/" className="navbar-item">

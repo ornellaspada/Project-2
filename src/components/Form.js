@@ -35,7 +35,7 @@ function Form() {
   }
   
   return (
-    <section className="hero is-fullheight-with-navbar is-light">
+    <section className="hero is-fullheight-with-navbar is-success">
       <section className="section">
         <h1 className="subtitle">Please fill in the requred fields</h1>
         <form className="column is-half is-offset-one-quarter" onSubmit={handleSubmit}>
@@ -132,7 +132,7 @@ function Form() {
           )}
           <div className="field">
             <p className="control">
-              <button className="button is-link" type="submit">
+              <button className="button is-primary is-light is-rounded" type="submit">
                 Calculate
               </button>
             </p>
