@@ -13,6 +13,6 @@ export function createFootprint(formData) {
   return axios.post(`${baseUrl}/estimates`,formData ,headers())
 }
 
-export function displayFootprint(data: { attributes }) {
-  return axios.get(`${baseUrl}/estimates`, headers())
+export function displayFootprint() {
+  return axios.get(`${baseUrl}/estimates` ,headers())
 }

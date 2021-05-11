@@ -1,28 +1,63 @@
 import React from 'react'
-import { useParams } from 'react-router'
 import { displayFootprint } from '../lib/api'
 
 function Results() {
-  const { id } = useParams()
+
   const [estimate, setEstimate] = React.useState(null)
 
   React.useEffect(() => {
     const getData = async () => {
       try {
-        const res = await displayFootprint(id)
+        const res = await displayFootprint()
         setEstimate(res.data)
       } catch (error) {
         console.log(error)
       }
     }
-    console.log(getData)
     getData()
-  }, [id])
+  }, [])
 
-  console.log(estimate)
+  
 
   return (
-    <h1>hello</h1>
+    <>
+      {estimate &&
+      <section className="hero is-fullheight-with-navbar is-light">
+        <section className="resultsSection" key={estimate[0].data.id}>
+          <div className="resultsDisplay">
+            <h1>Your carbon footprint for this shipping would be:</h1>
+            <h2>
+              {estimate[estimate.length - 1].data.attributes.carbon_g}g
+            </h2>
+            <h2>
+              {estimate[estimate.length - 1].data.attributes.carbon_kg}kg
+            </h2>
+            <h2>
+              {estimate[estimate.length - 1].data.attributes.carbon_lb}lb
+            </h2>
+            <h2>
+              {estimate[estimate.length - 1].data.attributes.carbon_mt}mt
+            </h2>
+            <h2>
+              The total cost to offset this would be £{Math.ceil(estimate[estimate.length - 1].data.attributes.carbon_g * 0.000007)}
+            </h2>
+          </div>
+          <div className="carbonNeutralBritain">
+            <img src="https://cdn.shopify.com/s/files/1/0502/7010/9865/files/Copy_of_Untitled_4_190x.png?v=1605188060"/>
+            <p className="charityInfo">Carbon Neutral Britain is the UK's leading Carbon Offsetting Initiative - allowing individuals and businesses to offset their carbon emissions.</p>
+            <p>Become carbon neutral for £6.99 month</p>
+            <a className="donateLink" href="https://carbonneutralbritain.org/products/become-carbon-neutral?variant=37544813428905&selling_plan=12419241">Donate</a>
+          </div>
+          <div className="coolEarth">
+            <img src="https://cornwallinnovation.co.uk/wp-content/uploads/2019/12/Cool-Earth-logo-scaled-e1575539011735.jpg"/>
+            <p className="charityInfo">Cool Earth's vision is a world where tropical deforestation and degredation has no role in climate change.</p>
+            <p>By supporting Cool Earth, you are protecting the rainforest, improving lives and helping to tackle the climate crisis</p>
+            <a className="donateLink" href="https://www.coolearth.org/get-involved/donate-cool-earth/">Donate</a>
+          </div>
+        </section>
+      </section>
+      }
+    </>
   )
 }
 

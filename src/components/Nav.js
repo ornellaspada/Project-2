@@ -11,9 +11,6 @@ function Nav() {
           <Link to="/form" className="navbar-item">
             Calculate my Footprint
           </Link>
-          <Link to="/estimates" className="navbar-item">
-            Results and Donate
-          </Link>
         </div>
       </div>
     </nav>

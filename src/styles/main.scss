@@ -1,2 +1,52 @@
 @import '~bulma/bulma.sass';
 
+.resultsSection {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.resultsDisplay {
+  display: inline-block;
+  border: 1px solid black;
+  width: 250px;
+  height: 500px;
+  padding: 30px;
+  margin: 40px;
+  text-align:center;
+}
+
+.carbonNeutralBritain {
+  display:inline-block;
+  border: 1px solid black;
+  width: 250px;
+  height: 500px;
+  padding: 30px;
+  margin: 40px;
+  text-align:center;
+}
+// .donateLink {
+//   padding-top: 10px;
+// }
+
+// .charityInfo {
+//   padding-top: 10px;
+// }
+
+.coolEarth {
+  display: inline-block;
+  border: 1px solid black;
+  width: 250px;
+  height: 500px;
+  padding: 30px;
+  margin: 40px;
+  text-align: center;
+}
+
+.hero-body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}

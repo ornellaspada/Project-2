@@ -7,12 +7,27 @@ function Home() {
   
   return (
     <>
-      <h1>About</h1>
-      <p>The way we shop has changed dramatically, even more so over the past year as our lives have almost exclusively moved online. Whilst we have adapted to this change easily, our planet has not!</p>
-      <p>Use our emission calulator to estimate the true environmental impact of the constant stream of packages that sign for, keep a monthly tally </p>
-      <Link to="/form">
-        <button onClick={handleChange}>estimate</button>
-      </Link>
+      <section className="hero is-light is-fullheight-with-navbar">
+        <div className="hero-body">
+          <p className="title">
+            About
+          </p>
+          <p className="subtitle">
+            The way we shop has changed dramatically over the past decade, even more so over the last year
+            as our lives have moved exlusively online.
+          </p>
+          <p className="subtitle">
+            Whilst we have easily adapted to this change, our planet has not!
+          </p>
+          <p className="subtitle">
+            Use our handy calulator to estimate the true environmental impact of that constant stream of packages arriving
+            at your door, and choose to donate to one of our partner charities and help take care of our planet.
+          </p>
+          <Link to="/form">
+            <button onClick={handleChange} className="button is-dark is-fullwidth">Estimate</button>
+          </Link>
+        </div>
+      </section>
     </>
   )
 }
