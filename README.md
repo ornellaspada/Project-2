@@ -6,12 +6,20 @@
 
 `npm run build` to create a build directory
 
-## Using Yarn
+### About us 
+* Write dscription of the app.
+* Add button to redirect to form page.
 
-`yarn start` or `yarn dev`  to run the development server
+### Form page
+* Create form for required elements.
+* Button to redirect to results.
 
-`yarn build` to create a build directory
-
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Results page
+* Creating the response based of the form page.
+* Convert to to offset amount.
+* Display charities for offseting c02 print.
+* Restart button.
+* Loading spinner.
+* Display text.
+* Cummulative footprint in cost.
 

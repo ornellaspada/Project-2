@@ -1,0 +1,26 @@
+@baseUrl = https://www.carboninterface.com/api/v1
+@apiKey = PoRJbKaz5sWFZKcKRNaw
+
+GET {{baseUrl}}/auth
+Authorization: Bearer {{apiKey}}
+
+###
+
+POST  {{baseUrl}}/estimates
+Authorization: Bearer {{apiKey}}
+Content-Type: application/json
+
+{
+  "type": "shipping",
+  "weight_value": 200,
+  "weight_unit": "g",
+  "distance_value": 2000,
+  "distance_unit": "km",
+  "transport_method": "truck"
+}
+
+###
+
+GET {{baseUrl}}/estimates
+Authorization: Bearer {{apiKey}}
+Content-Type: application/json
