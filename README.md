@@ -54,9 +54,11 @@ Our starting requirements were really simple, namely:
 - Homepage
 - Form Page to gather user data
 - Estimation Page and links to non-profit organizations
+
 Stretch goals were able to implement:
 
 - Geolocatozation of several no-profit organization
+
 Further additions:
 
 - Add several features the user can pick to lower carbon emissions (longer shipping time)
