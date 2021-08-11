@@ -1,17 +1,19 @@
-# ***CarbonFree - A Frontend React App***
+# CarbonFree - A Frontend React App
 
 A React app built during a 36-hour hackathon, using the Spoonacular API. My first pair-coding project for General Assembly's Software Engineering Immersive.
 
-## Developed by:
+## Authors
 
+- Drew Lamph - [GitHub](https://github.com/dlamph)
 - Devante Spaine - [GitHub](https://github.com/dee912)
-- Drew Lamph - GitHub()
+- Ornella Spada
 
 ![project](https://media.giphy.com/media/KcgO4mkqNU5KfmMf2q/giphy.gif)
 
 ### Deployment 
 
 I deployed this website on Netlify and it is available [here](https://carbonfree-ornellaspada.netlify.app)
+
 
 ### Concept
 
@@ -26,7 +28,7 @@ I deployed this website on Netlify and it is available [here](https://carbonfree
 - Include wireframes that we designed before building the app.
 - Be deployed online and accessible to the public.
 - A git repository hosted on Github, with a link to our hosted project and frequent commits dating back to the very beginning of the project.
-- A working request in Insomnia from the API we want to use, showing that we can access the dataset we need.
+
 
 ### Technologies Used 
 
@@ -46,10 +48,18 @@ I deployed this website on Netlify and it is available [here](https://carbonfree
   - VS Code Live Share
   - Netlify
 
-## Installation Instructions
+## MVP
+Our starting requirements were really simple, namely:
 
-1. Clone repo code from GitHub onto your machine.
-2. Use yarn or npm to install all dependencies from the package.json file.
+Homepage
+Form Page to gather user data
+Estimation Page and links to non-profit organizations
+Stretch goals were able to implement:
+
+- Geolocatozation of several no-profit organization
+Further additions:
+
+- Add several features the user can pick to lower carbon emissions (longer shipping time)
 
 ## Wireframes 
 <img src="pictures/FreeCarbon_3.png" alt="App"/>
