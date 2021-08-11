@@ -51,9 +51,9 @@ I deployed this website on Netlify and it is available [here](https://carbonfree
 ## MVP
 Our starting requirements were really simple, namely:
 
-Homepage
-Form Page to gather user data
-Estimation Page and links to non-profit organizations
+- Homepage
+- Form Page to gather user data
+- Estimation Page and links to non-profit organizations
 Stretch goals were able to implement:
 
 - Geolocatozation of several no-profit organization
